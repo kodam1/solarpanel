@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SunPower Solar | Professional Solar Solutions</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --primary-color: #ff9800;
+            --secondary-color: #2196f3;
+            --dark-color: #1a237e;
+            --light-color: #f5f5f5;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.8rem;
+        }
+        
+        .navbar-brand i {
+            color: var(--primary-color);
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 150px 0;
+        }
+        
+        .section-title {
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary-color);
+        }
+        
+        .icon-box {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .card {
+            border: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            padding: 10px 25px;
+        }
+        
+        .btn-primary:hover {
+            background-color: #e68900;
+            border-color: #e68900;
+        }
+        
+        .testimonial-card {
+            border-left: 5px solid var(--primary-color);
+        }
+        
+        .stats-section {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 80px 0;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+        
+        .contact-section {
+            background-color: #f9f9f9;
+        }
+        
+        .form-control:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.25rem rgba(255, 152, 0, 0.25);
+        }
+        
+        footer {
+            background-color: #1a1a1a;
+            color: #ccc;
+        }
+        
+        .footer-link {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-link:hover {
+            color: var(--primary-color);
+        }
+        
+        .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 10px;
+            transition: all 0.3s;
+        }
+        
+        .social-icons a:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-5px);
+        }
+        
+        .price {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-sun"></i> SunPower Solar
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-primary" href="#contact">Get Quote</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4">Power Your Home With Clean Solar Energy</h1>
+                    <p class="lead mb-4">We provide high-efficiency solar panel installation and maintenance services for residential and commercial properties. Save up to 80% on your electricity bills!</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#contact" class="btn btn-primary btn-lg">Get Free Consultation</a>
+                        <a href="#products" class="btn btn-outline-light btn-lg">View Products</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mt-5 mt-lg-0">
+                        <div class="card-body p-4">
+                            <h3 class="card-title mb-3">Free Solar Assessment</h3>
+                            <p class="card-text mb-4">Find out how much you can save with solar energy</p>
+                            <form>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Email Address" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="tel" class="form-control" placeholder="Phone Number" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Zip Code" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Get Assessment</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title text-start">Why Choose SunPower Solar?</h2>
+                    <p class="mb-4">With over 15 years of experience in the solar energy industry, we are committed to providing sustainable energy solutions that are both efficient and affordable.</p>
+                    
+                    <div class="d-flex mb-3">
+                        <div class="me-4">
+                            <i class="bi bi-award-fill icon-box"></i>
+                        </div>
+                        <div>
+                            <h4>Certified & Experienced</h4>
+                            <p>Our technicians are NABCEP certified with extensive training in solar installation and maintenance.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex mb-3">
+                        <div class="me-4">
+                            <i class="bi bi-shield-check icon-box"></i>
+                        </div>
+                        <div>
+                            <h4>25-Year Warranty</h4>
+                            <p>We offer industry-leading 25-year warranty on all our solar panels and installation work.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex">
+                        <div class="me-4">
+                            <i class="bi bi-graph-up-arrow icon-box"></i>
+                        </div>
+                        <div>
+                            <h4>Maximum Efficiency</h4>
+                            <p>Our solar panels deliver up to 22.8% efficiency, ensuring maximum energy production.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                         alt="Solar Installation" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Our Solar Services</h2>
+            <p class="text-center mb-5">Comprehensive solar solutions for residential, commercial, and industrial properties</p>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card text-center h-100">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-house-door-fill icon-box"></i>
+                            </div>
+                            <h4 class="card-title">Residential Solar</h4>
+                            <p class="card-text">Complete solar panel installation for homes with custom solutions tailored to your energy needs.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="card text-center h-100">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-building-fill icon-box"></i>
+                            </div>
+                            <h4 class="card-title">Commercial Solar</h4>
+                            <p class="card-text">Solar solutions for businesses to reduce operational costs and improve sustainability.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="card text-center h-100">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-tools icon-box"></i>
+                            </div>
+                            <h4 class="card-title">Maintenance & Repair</h4>
+                            <p class="card-text">Regular maintenance and prompt repair services to ensure optimal performance of your solar system.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="card text-center h-100">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-lightning-charge-fill icon-box"></i>
+                            </div>
+                            <h4 class="card-title">Solar Battery Storage</h4>
+                            <p class="card-text">Energy storage solutions to store excess solar power for use during nighttime or power outages.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Our Solar Products</h2>
+            <p class="text-center mb-5">High-quality solar panels and equipment from leading manufacturers</p>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1624397640148-949b1732bb0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" 
+                             class="card-img-top" alt="Monocrystalline Solar Panel">
+                        <div class="card-body">
+                            <h4 class="card-title">Monocrystalline Solar Panels</h4>
+                            <p class="card-text">High-efficiency monocrystalline panels with up to 22.8% efficiency rate and 25-year warranty.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">From $2,500</span>
+                                <a href="#contact" class="btn btn-primary">Inquire Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                             class="card-img-top" alt="Polycrystalline Solar Panel">
+                        <div class="card-body">
+                            <h4 class="card-title">Polycrystalline Solar Panels</h4>
+                            <p class="card-text">Cost-effective polycrystalline panels with 18-20% efficiency, perfect for budget-conscious projects.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">From $1,800</span>
+                                <a href="#contact" class="btn btn-primary">Inquire Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                             class="card-img-top" alt="Solar Battery System">
+                        <div class="card-body">
+                            <h4 class="card-title">Solar Battery Systems</h4>
+                            <p class="card-text">Lithium-ion battery storage systems to store excess solar energy for backup power needs.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">From $5,000</span>
+                                <a href="#contact" class="btn btn-primary">Inquire Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 col-6 mb-4 mb-md-0">
+                    <div class="stat-number">2,500+</div>
+                    <p>Solar Installations</p>
+                </div>
+                <div class="col-md-3 col-6 mb-4 mb-md-0">
+                    <div class="stat-number">15+</div>
+                    <p>Years Experience</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-number">50M+</div>
+                    <p>KWh Generated</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-number">98%</div>
+                    <p>Customer Satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Customer Testimonials</h2>
+            <p class="text-center mb-5">See what our customers say about our solar solutions</p>
+            
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="card testimonial-card h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex mb-3">
+                                <div class="flex-shrink-0">
+                                    <i class="bi bi-quote fs-1 text-primary"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <p class="fst-italic">"Our electricity bill has reduced by 80% since installing SunPower solar panels. The installation was quick and professional."</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <h5 class="mb-0">Sarah Johnson</h5>
+                                    <small>Homeowner, California</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="card testimonial-card h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex mb-3">
+                                <div class="flex-shrink-0">
+                                    <i class="bi bi-quote fs-1 text-primary"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <p class="fst-italic">"The commercial solar installation for our warehouse was completed on time and within budget. Highly recommend SunPower!"</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <h5 class="mb-0">Michael Rodriguez</h5>
+                                    <small>Business Owner, Texas</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="card testimonial-card h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex mb-3">
+                                <div class="flex-shrink-0">
+                                    <i class="bi bi-quote fs-1 text-primary"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <p class="fst-italic">"Excellent service from start to finish. The team helped us navigate the tax incentives and made the whole process seamless."</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <h5 class="mb-0">Emily Chen</h5>
+                                    <small>Homeowner, Florida</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <h2 class="section-title">Get Your Free Solar Assessment</h2>
+            <p class="text-center mb-5">Contact us today for a free consultation and quote</p>
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card shadow">
+                        <div class="card-body p-4 p-md-5">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="name" class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="phone" class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" id="phone" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="service" class="form-label">Service Interested In</label>
+                                        <select class="form-select" id="service">
+                                            <option selected>Select a service</option>
+                                            <option value="residential">Residential Solar</option>
+                                            <option value="commercial">Commercial Solar</option>
+                                            <option value="maintenance">Maintenance & Repair</option>
+                                            <option value="battery">Battery Storage</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="4" placeholder="Tell us about your solar project..."></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg w-100">Submit Request</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="mb-3">
+                        <i class="bi bi-sun"></i> SunPower Solar
+                    </h3>
+                    <p class="mb-4">Providing sustainable solar energy solutions for homes and businesses since 2008. Certified, experienced, and committed to a greener future.</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home" class="footer-link">Home</a></li>
+                        <li class="mb-2"><a href="#about" class="footer-link">About Us</a></li>
+                        <li class="mb-2"><a href="#services" class="footer-link">Services</a></li>
+                        <li class="mb-2"><a href="#products" class="footer-link">Products</a></li>
+                        <li><a href="#contact" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="mb-3">Our Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="footer-link">Residential Solar</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link">Commercial Solar</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link">Solar Maintenance</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link">Battery Storage</a></li>
+                        <li><a href="#" class="footer-link">Solar Financing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3">
+                    <h5 class="mb-3">Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-geo-alt me-2"></i> 123 Solar Avenue, Phoenix, AZ 85001</li>
+                        <li class="mb-2"><i class="bi bi-telephone me-2"></i> (602) 555-1234</li>
+                        <li class="mb-2"><i class="bi bi-envelope me-2"></i> info@sunpowersolar.com</li>
+                        <li><i class="bi bi-clock me-2"></i> Mon-Fri: 8am-6pm</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="my-4" style="border-color: #444;">
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2023 SunPower Solar. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="footer-link me-3">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Form submission handling
+        document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // In a real application, you would submit the form data to a server
+                // For this demo, we'll just show an alert
+                alert('Thank you for your inquiry! We will contact you shortly.');
+                this.reset();
+            });
+        });
+        
+        // Navbar background on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('bg-white', 'shadow');
+            } else {
+                navbar.classList.remove('bg-white', 'shadow');
+            }
+        });
+    </script>
+</body>
+</html>
